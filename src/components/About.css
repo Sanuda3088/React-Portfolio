@@ -1,0 +1,150 @@
+/* Container styles */
+.container {
+    min-height: 100vh;
+    background-color: #121121;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+/* Content styles */
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-top: 8rem;
+    }
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Text content styles */
+.text-content {
+    color: white;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #55e6a5;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 25px;
+    line-height: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        font-size: 35px;
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .subtitle {
+        font-size: 45px;
+    }
+}
+
+.highlight {
+    color: #facc15;
+}
+
+.description-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.divider {
+    display: none;
+    width: 100px;
+    height: 5px;
+    background-color: #cbd5e1;
+    border-radius: 0.125rem;
+}
+
+@media (min-width: 768px) {
+    .divider {
+        display: block;
+    }
+}
+
+.description {
+    font-size: 19px;
+    color: #cbd5e1;
+    width: 80%;
+}
+
+/* Button styles */
+.download-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #55e6a5;
+    color: black;
+    transition: background-color 200ms;
+    border: none;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #facc15;
+}
+
+.icon {
+    height: 1.7rem;
+    width: 1.6rem;
+    color: black;
+    margin-left: 0.5rem;
+}
+
+/* Image container styles */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .image-container {
+        width: 500px;
+        height: 500px;
+        margin-top: 0;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 11;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #55e6a5;
+    top: -2rem;
+    right: -2rem;
+    z-index: 10;
+}
