@@ -1,85 +1,79 @@
 .footer-container {
-    background-color: #02050a;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .footer-heading {
-    font-size: 35px;
-    color: white;
-    padding-bottom: 4rem;
-  }
-  
-  .footer-heading .highlight {
-    color: #facc15; /* Equivalent to Tailwind's text-yellow-400 */
-  }
-  
+  background-color: #02050a;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-heading {
+  font-size: 35px;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.footer-heading .highlight {
+  color: #facc15; /* Equivalent to Tailwind's text-yellow-400 */
+}
+
+.footer-grid {
+  display: grid;
+  border-bottom: 1px solid grey;
+  padding-bottom: 6rem;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #55e6a5;
+  transition: transform 0.2s;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: black;
+}
+
+.icon-label {
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.footer-note {
+  color: white;
+  opacity: 0.4;
+  padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
   .footer-grid {
-    display: grid;
-    border-bottom: 1px solid grey;
-    padding-bottom: 6rem;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    width: 80%;
-    margin: 0 auto;
-    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media (min-width: 768px) {
-    .footer-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  .footer-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-  }
-  
   .icon-container {
-    display: flex;
-    align-items:center ;
-    justify-content: center;
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .icon {
     width: 5rem;
     height: 5rem;
-    border-radius: 50%;
-    background-color: #55e6a5;
-    transition: transform 0.2s;
   }
-  
-  .icon {
-    width: 3.5rem;
-    height: 3.5rem;
-    color: black;
-  }
-  
-  @media (min-width: 768px) {
-    .icon-container {
-      align-items: center;
-      width: 6.5rem;
-      height: 6.5rem;
-    }
-  
-    .icon {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
-  
-  .icon-label {
-    color: white;
-    font-weight: 600;
-    margin-top: 1rem;
-  }
-  
-  .footer-note {
-    color: white;
-    opacity: 0.4;
-    padding-top: 2rem;
-  }
-  
+}

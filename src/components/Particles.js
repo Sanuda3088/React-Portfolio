@@ -1,4 +1,4 @@
-// src/components/Particle.js
+
 import { useCallback } from "react";
 import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -50,7 +50,7 @@ export const Particle = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.2,
             width: 1,
           },
           move: {
@@ -70,18 +70,18 @@ export const Particle = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
           shape: {
             type: "polygon",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 2, max: 3 },
           },
         },
         detectRetina: true,
       }}
-    />
+    ></Particles>
   );
 };
 

@@ -1,9 +1,11 @@
 /* Container styles */
 .container {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: #121121;
     padding-bottom: 3rem;
     padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Content styles */
@@ -12,18 +14,11 @@
     grid-template-columns: 1fr;
     gap: 3rem;
     align-items: center;
+    justify-items: center;
     width: 80%;
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .container {
-        padding-top: 8rem;
-    }
-    .content {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 /* Text content styles */
 .text-content {
@@ -46,18 +41,6 @@
     margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-    .subtitle {
-        font-size: 35px;
-        line-height: 3rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .subtitle {
-        font-size: 45px;
-    }
-}
 
 .highlight {
     color: #facc15;
@@ -66,6 +49,7 @@
 .description-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 3rem;
 }
 
@@ -77,11 +61,6 @@
     border-radius: 0.125rem;
 }
 
-@media (min-width: 768px) {
-    .divider {
-        display: block;
-    }
-}
 
 .description {
     font-size: 19px;
@@ -91,8 +70,10 @@
 
 /* Button styles */
 .download-button {
+    height: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 1rem 2rem;
     font-size: 18px;
     font-weight: bold;
@@ -109,8 +90,8 @@
 }
 
 .icon {
-    height: 1.7rem;
-    width: 1.6rem;
+    height: 30px;
+    width: 30px;
     color: black;
     margin-left: 0.5rem;
 }
@@ -121,14 +102,6 @@
     width: 300px;
     height: 300px;
     margin-top: 2rem;
-}
-
-@media (min-width: 1024px) {
-    .image-container {
-        width: 500px;
-        height: 500px;
-        margin-top: 0;
-    }
 }
 
 .image {
@@ -147,4 +120,36 @@
     top: -2rem;
     right: -2rem;
     z-index: 10;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        padding-top: 8rem;
+    }
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .subtitle {
+        font-size: 35px;
+        line-height: 3rem;
+    }
+    .divider {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container{
+        min-height: 100dvh;
+    }
+    .subtitle {
+        font-size: 45px;
+    }
+    .image-container {
+        width: 500px;
+        height: 500px;
+        margin-top: 0;
+    }
 }

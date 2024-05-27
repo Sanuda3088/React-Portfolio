@@ -8,7 +8,9 @@
     padding: 1rem;
     width: 100%;
     text-transform: uppercase;
-    background-color: #2d2d2d; /* Changed from Tailwind's bg-gray-800 */
+    background-color: rgba(255, 255, 255, 0.059); /* Semi-transparent white */
+    backdrop-filter: blur(10px); 
+    /*background-color:  #2d2d2d; /* Changed from Tailwind's bg-gray-800 */
     border-radius: 0.25rem;
     color: white;
     font-size: 1.25rem; /* Adjusted from text-[20px] */
