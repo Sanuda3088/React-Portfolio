@@ -2,6 +2,7 @@
   background-color: #02050a;
   padding-top: 4rem;
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -11,7 +12,7 @@
 }
 
 .projects-heading {
-  font-size: 2rem;
+  font-size: 35px;
   color: white;
   text-align: center;
 }
