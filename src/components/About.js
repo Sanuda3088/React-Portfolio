@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                     <button className="download-button">
                         <p>Download CV</p>
-                        <ArrowDownTrayIcon className="icon" />
+                        <ArrowDownTrayIcon className="downloadicon" />
                     </button>
                 </div>
                 <div className="image-container">

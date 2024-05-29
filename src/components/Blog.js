@@ -11,7 +11,7 @@ const Blog = () => {
       <div className="blog-grid">
         <div className="blog-item">
           <div className="image-wrapper">
-            <img src="/images/b1.jpg" className="blog-image" alt="blog1" />
+            <img src="/images/blog1.jpg" className="blog-image" alt="blog1" />
           </div>
           <div className="blog-content">
             <div className="blog-date">December 10, 2023</div>
@@ -21,8 +21,33 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="blog-item"></div>
-        <div className="blog-item"></div>
+
+        <div className="blog-item">
+          <div className="image-wrapper">
+            <img src="/images/blog2.jpg" className="blog-image" alt="blog1" />
+          </div>
+          <div className="blog-content">
+            <div className="blog-date">March 11, 2023</div>
+            <div className="icon-wrapper">
+              <BookOpenIcon className="blog-icon" />
+              <p className="read-text">Read</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="blog-item">
+          <div className="image-wrapper">
+            <img src="/images/blog3.jpg" className="blog-image" alt="blog1" />
+          </div>
+          <div className="blog-content">
+            <div className="blog-date">February 27, 2023</div>
+            <div className="icon-wrapper">
+              <BookOpenIcon className="blog-icon" />
+              <p className="read-text">Read</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

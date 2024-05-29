@@ -17,7 +17,7 @@
 
 .logo {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     font-weight: bold;
 }
@@ -27,20 +27,34 @@
 }
 
 .nav-links {
+    font-size: 20px;
     display: flex;
 }
 
+
 .nav-link {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     cursor: pointer;
     color: white;
+    position: relative;
 }
 
-@media (max-width: 800px) {
-    .nav-links {
-      display: none; /* Show the nav-icon when the display size is smaller than 800px */
-    }
-  }
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    visibility: hidden;
+    transition: all 0.256s ease-in-out;
+}
+
+.nav-link:hover::after {
+    visibility: visible;
+    width: 100%;
+} 
 
 .nav-icon {
     cursor: pointer;
@@ -55,8 +69,14 @@
     /* Add your icon styles */
 }
 
+
 @media (max-width: 800px) {
-    .nav-icon {
-      display: block; /* Show the nav-icon when the display size is smaller than 800px */
+    .nav-icon{
+        display: block;
+    }
+    .nav-links {
+      display: none; /* Show the nav-icon when the display size is smaller than 800px */
     }
   }
+
+

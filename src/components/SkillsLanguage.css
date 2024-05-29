@@ -1,27 +1,39 @@
 .skill-container {
-    position: relative;
-    margin-bottom: 2rem;
-    width: 90%;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.skill-title {
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.059); /* Semi-transparent white */
+  backdrop-filter: blur(10px);
+
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.skill-level {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 8px;
+  background-color: #55e6a5;
+}
+
+.skill-level {
+  animation: fillskill 2s forwards;
+}
+
+@keyframes fillskill {
+  from {
+    width: 0;
   }
-  
-  .skill-title {
-    padding: 1rem;
-    width: 100%;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.059); /* Semi-transparent white */
-    backdrop-filter: blur(10px); 
-    /*background-color:  #2d2d2d; /* Changed from Tailwind's bg-gray-800 */
-    border-radius: 0.25rem;
-    color: white;
-    font-size: 1.25rem; /* Adjusted from text-[20px] */
-    font-weight: bold;
+  to {
+    width: "";
   }
-  
-  .skill-level {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 8px;
-    background-color: #55e6a5; /* Adjusted from Tailwind's bg-[#55e6a5] */
-  }
-  
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './SkillsLanguage.css';
 
 const SkillsLanguage = ({ skill1, skill2, skill3, skill4, skill5, level1, level2, level3, level4, level5 }) => {
+
   return (
     <div>
       <div className="skill-container">

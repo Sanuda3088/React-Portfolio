@@ -17,11 +17,11 @@ const Nav = ({ openNav }) => {
                     <div className='nav-link'>Contact</div>
                 </div>
                 <div onClick={openNav} className='nav-icon'>
-                    <span><Bars3Icon className='bars-icon'></Bars3Icon></span>
+                    <span><Bars3Icon className='bars-icon' /></span>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Nav;
