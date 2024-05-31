@@ -9,6 +9,7 @@ import Services from './components/Services';
 import Skills from './components/Skills';
 import Nav from './components/Nav';
 import MobileNav from './components/MobileNav';
+import { Link } from 'react-scroll';
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);

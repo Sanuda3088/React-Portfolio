@@ -4,7 +4,8 @@ import './Services.css';
 
 const Services = () => {
     return (
-        <div className="services-container">
+        <div id='services'>
+            <div className="services-container">
             <p className="services-heading">My
                 <span className="highlight">Services</span>
             </p>
@@ -31,6 +32,7 @@ const Services = () => {
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
