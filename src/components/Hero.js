@@ -5,7 +5,7 @@ import './Hero.css'; // Import the CSS file
 
 const Hero = () => {
   return (
-    <div className='hero-container'>
+    <div id='home' className='hero-container'>
       <Particle/>
       <div className="hero-content">
         <div className="hero-text">
