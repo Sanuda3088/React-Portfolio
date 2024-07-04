@@ -6,10 +6,9 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Services from './components/Services';
-import Skills from './components/Skills';
 import Nav from './components/Nav';
 import MobileNav from './components/MobileNav';
-import { Link } from 'react-scroll';
+import Technologies from './components/Technologies';
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -30,7 +29,7 @@ function App() {
         <Hero />
         <About />
         <Services />
-        <Skills />
+        <Technologies/>
         <Projects />
         <Blog />
         <Footer />
