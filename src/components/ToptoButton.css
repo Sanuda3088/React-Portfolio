@@ -1,0 +1,22 @@
+.tbuttonheading {
+    text-align: center;
+    color: yellow;
+  }
+  
+  .tbuttoncontent {
+    overflow-y: scroll;
+    height: 2500px;
+  }
+  
+  .button {
+    position: fixed;
+    width: 100%;
+    left:95%;
+    bottom: 40px;
+    height: 20px;
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+    color: #55e6a5;
+  }
+  

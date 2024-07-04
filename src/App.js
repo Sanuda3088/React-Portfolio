@@ -9,6 +9,7 @@ import Services from './components/Services';
 import Nav from './components/Nav';
 import MobileNav from './components/MobileNav';
 import Technologies from './components/Technologies';
+import ToptoButton from './components/ToptoButton';
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -27,13 +28,18 @@ function App() {
         <Nav openNav={openNav} />
         <MobileNav nav={isNavOpen} closeNav={closeNav} />
         <Hero />
+      </header>
+      <main>
         <About />
         <Services />
-        <Technologies/>
+        <Technologies />
         <Projects />
         <Blog />
+      </main>
+      <footer>
         <Footer />
-      </header>
+      </footer>
+      <ToptoButton />
     </div>
   );
 }
