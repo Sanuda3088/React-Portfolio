@@ -81,7 +81,7 @@ const Technologies = () => {
                             <div className='skillImageContainer'>
                                 <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                             </div>
-                            <p className='skillTitle'>{getImageTitle(skill.title)}</p>
+                            {/*<p className='skillTitle'>{getImageTitle(skill.title)}</p>*/}
                         </div>
                     ))}
                 </div>
